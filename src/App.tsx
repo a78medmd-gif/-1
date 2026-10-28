@@ -14,7 +14,7 @@ import HelpPage from './pages/HelpPage.tsx';
 import SettingsPage from './pages/SettingsPage.tsx';
 
 // Only implemented screens are enabled; the rest are visibly disabled (no fake features).
-const PAGES = [['home','الرئيسية'],['trades','الصفقات'],['add','إضافة صفقة'],['analysis','التحليل'],['charts','الرسوم'],['import','استيراد Excel'],['backup'],['settings','الإعدادات']] as const;
+const PAGES = [['home','الرئيسية'],['trades','الصفقات'],['add','إضافة صفقة'],['analysis','التحليل'],['charts','الرسوم'],['missed','الفرص الفائتة'],['checklist','قائمة الفحص'],['import','استيراد Excel'],['backup','نسخ احتياطي'],['help','مساعدة'],['settings','الإعدادات']] as const;
 type Page = typeof PAGES[number][0];
 
 export default function App() {
